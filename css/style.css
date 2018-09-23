@@ -1,0 +1,130 @@
+/* CSS Variables */
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+body {
+  background-color: #a7a7a7;
+}
+#home {
+  background-image: url(../img/laptop.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  align-items: center;
+  justify-content: scenter;
+  height: 60vh;
+}
+.btn {
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+  margin-top: 100px;
+}
+.btn:hover {
+  background-color: var(--light);
+  color: var(--dark);
+}
+#home-inner {
+  margin-top: 10vh;
+  color: #ddd;
+}
+#home-inner h1 {
+  font-size: 70px;
+  margin-bottom: 0;
+}
+#home-inner p {
+  margin-bottom: 20px;
+}
+
+/* boxes */
+.about {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 30px;
+}
+
+.box {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+.box h3 {
+  padding-top: 20px;
+}
+
+img {
+  max-width: 100%;
+}
+/* info section */
+.info {
+  background: var(--primary);
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-gap: 20px;
+  padding: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 30px;
+}
+.info p {
+  margin-bottom: 20px;
+}
+
+/* portfolio */
+.portfolio {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 30px;
+}
+.portfolio img {
+  width: 100%;
+  box-shadow: var(--shadow);
+}
+
+footer {
+  margin-top: 2rem;
+  background-color: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: 1rem;
+}
+footer p {
+  padding: 15px;
+}
+@media (max-width: 966px) {
+  #home-inner h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 600px) {
+  #home-inner {
+    margin-top: 7vh;
+    color: #ddd;
+ 
+  }
+  .info {
+    text-align: center;
+  }
+  .info .btn{
+    width: 100%;
+  }
+}
+@media (max-width: 381px) {
+  #home-inner {
+    margin-top: 5vh;
+    color: #ddd;
+    
+  }
+  #home-inner h1 {
+    font-size: 40px;
+  }
+}
