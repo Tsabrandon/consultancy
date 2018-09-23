@@ -1,2 +1,3 @@
-"# consultancy" 
-Website design made with pure HTML, CSS and Javascript
+Digital Consultancy Web Design 
+
+Made with pure HTML, CSS and Javascript
